@@ -9,7 +9,7 @@ backbone:
   - [0, 1, Index, [512, 6]]   # selects 6th output (1, 512, 80, 80) - 1
   - [0, 1, Index, [1024, 7]]  # selects 7th output (1, 1024, 40, 40) - 2
   - [0, 1, Index, [2048, 8]]  # selects 8th output (1, 2048, 20, 20) - 3
-  - [-1, 1, SPPF, [1024, 5]] # SPFF - 4
+  - [-1, 1, SPPF, [1024, 5]]  # SPFF - 4
 
 head:
   - [-1, 1, nn.Upsample, [None, 2, "nearest"]]
